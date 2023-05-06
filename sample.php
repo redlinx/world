@@ -7,7 +7,7 @@ $db ="world";
 
 $sql_1 = "SELECT * FROM city where ID = 4079";
 $sql_2 = "SELECT * FROM city";
-$sql_3 = "SELECT * FROM city LIMIT 15";
+$sql_3 = "SELECT * FROM city LIMIT 50";
 
 $conn = new mysqli($servername, $username, $password, $db);
 
@@ -39,11 +39,11 @@ echo "</pre>";
 
 echo "<table border = 1>";
 	echo "<tr>";
-		echo "<td>ID</td>";
-		echo "<td>Name</td>";
-		echo "<td>CountryCode</td>";
-		echo "<td>District</td>";
-		echo "<td>Population</td>";
+		echo "<th>ID</th>";
+		echo "<th>Name</th>";
+		echo "<th>CountryCode</th>";
+		echo "<th>District</th>";
+		echo "<th>Population</th>";
 	echo "</tr>";
 
 for($x=0;$x<count($city["city_info"]);$x++){
